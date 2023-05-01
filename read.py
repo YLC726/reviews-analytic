@@ -15,3 +15,10 @@ for i in range(len(data)):
 average = total/len(data)
 
 print("平均留言長度為:", average)
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('共有',len(new),'筆留言長度小於100')
+print(new[0])
